@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+.main{
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+.header{
+    height: 60px;
+    width: 100%;
+    border: 1px solid black;
+    position: fixed; 
+    
+}
+.first-img{
+    height: 100%;
+    border: 1px solid black;
+}
+.work-div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin: 10px;
+}
+.work-content{
+    margin: 10px;
+    height: 200px;
+    border: 1px solid black;
+    flex: 1 1 160px;
+    
+}
