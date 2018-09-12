@@ -1,36 +1,179 @@
+
 body{
-    height: 100vh;
     margin: 0px;
-    overflow: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
-.main{
-    height: 100%;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-}
-.header{
-    height: 60px;
+nav{
     width: 100%;
-    border: 1px solid black;
-    position: fixed; 
-    
-}
-.first-img{
-    height: 100%;
-    border: 1px solid black;
-}
-.work-div{
+    height: 60px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 0px;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
 }
-.work-content{
-    margin: 10px;
+.nav-item{
+    padding: 10px;
+}
+.nav-item>span:hover{
+    background-color: #cccccc;
+
+}
+.nav-item>span{
+    padding: 20px;
+}
+.name{
+    padding: 20px;
+}
+
+.first-img{
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid black; */
+    background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/05/Free-Desktop-Laptop-Asus-Wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;  
+}
+.name-img > h1, .pession{
+    color: white;
+    font-size: 3em;
+}
+.name-img{
+    text-align: center;
+}
+.project,.about{
+    padding: 20px 0px;
+    border-bottom: 3px solid #f1f1f1;
+    margin: 0px 20px;
+}
+.projects-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.projects-items{
     height: 200px;
-    border: 1px solid black;
-    flex: 1 1 160px;
+    border: 1px solid white;
+    width: 400px;
+    margin: 10px;
+    flex: 1 1 250px;
+    max-width: 350px;   
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+.img1{
+    background-image: url("images/Capture14.PNG");
+    background-size: cover;
+    background-position: center;
     
+
+}
+/* .img2{ */
+    /* background-image: url("images/Capture3.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img3{
+    
+} */
+
+.img1:hover{
+    transform: scale(1.1);
+    transition: 0.5s; 
+    z-index: 1;
+}
+.tags{
+    background-color: black;
+    color: white;
+    padding-right:30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+}
+.layout{
+    background-color: #fffff;
+    height: 200px;
+    width: 100%;
+}
+a{
+	text-decoration: none;
+	color: black;
+	padding-right: 20px;
+	/* padding-left: 10px; */
+}
+
+@media screen and (max-width: 500px){
+    .name{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    
+
+}
+.about-text{        
+	
+}	
+img{
+    height: 350px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.about-card{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    border: 1px solid black;    
+    height: 500px;
+    width: 300px;
+
+}
+.contact{
+	margin-top: 20px;
+	height: 200px;
+	width: 100%;
+	border: 1px solid black;
+	background-image: url("https://media.istockphoto.com/videos/highly-detailed-aluminum-laptop-spinning-thin-technology-animation-video-id458163472?s=640x640");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
 }
